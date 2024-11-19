@@ -1,0 +1,4 @@
+# Project exclude paths
+/keycloak/.gradle/
+/keycloak/build/
+/keycloak/build/classes/kotlin/main/

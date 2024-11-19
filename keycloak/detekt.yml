@@ -1,0 +1,6 @@
+empty-blocks:
+  EmptyFunctionBlock:
+    active: false
+style:
+  UnusedImports:
+    active: true

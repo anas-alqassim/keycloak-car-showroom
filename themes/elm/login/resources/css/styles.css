@@ -1,0 +1,104 @@
+.verification-container {
+    h1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .inputs {
+        display: flex;
+        justify-content: space-between;
+    
+        input {
+            width: 80px;
+            height: 100px;
+            flex: 1 0 80px;
+            background-color: #f7f5ee;
+            border-radius: 10px;
+            font-size: 56px;
+            color: #5D572D;
+            text-align: center;
+            border: none;
+            
+    
+            &:not(:last-child) {
+                margin-right: 10px;
+            }
+    
+            &:focus-visible {
+                outline: 1px solid var(--nds-color-interactive-accent);
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .verification-container .inputs input {
+        width: 50px;
+        flex: 1;
+    }
+}
+
+.login-pf-signup .instruction {
+    font-size: 16px;
+    font-weight: 300;
+
+    a {
+        color: var(--nds-color-interactive-accent);
+        font-size: 14px;
+        font-weight: 400;
+    }
+}
+
+#kc-verify-email-code-form label[for="email_code"] {
+    visibility: hidden;
+}
+
+#kc-register-form #kc-form-options {
+    display: none;
+}
+
+.elm-main-body .subtitle {
+    display: none;
+}
+
+#kc-reset-password-form {
+    margin-top: 3rem;
+
+    #kc-form-options {
+        display: none;
+    }
+
+    .login-pf-settings {
+        margin-top: 2rem;
+    }
+}
+
+.kc-login-tooltip {
+    margin-top: 10px;
+
+    i {
+        display: none;
+    }
+}
+
+.elm-main-body:has(#kc-reset-password-form) #kc-info {
+    display: none;
+}
+
+#kc-reset-password-form .form-group:first-child {
+    margin-bottom: 5rem;
+}
+
+#kc-passwd-update-form #kc-form-options {
+    display: none;
+}
+
+#input-error-email_code {
+    display: block;
+    text-align: center;
+}
+
+/* On password update page we dont want to show "You need to change your password." above form */
+.elm-main-body:has(#kc-passwd-update-form) .pf-m-warning {
+    display: none;
+}
