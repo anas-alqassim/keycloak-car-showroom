@@ -1,5 +1,3 @@
-# Development guide
-
 ## Starting Keycloak on local machine
 run ```docker compose -f docker-compose.postgres.yml up``` to start the server with a Postgres database.
 
